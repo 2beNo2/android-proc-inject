@@ -1,6 +1,9 @@
 #ifndef PROC_INJECT_T
 #define PROC_INJECT_T 1
 
+#include <sys/types.h>
+
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -19,6 +22,8 @@ extern "C" {
     -向目标进程发送SIGCONT信号，让目标进程恢复
 */
 
+
+void proc_inject(pid_t pid);
 
 #ifdef __cplusplus
 }
