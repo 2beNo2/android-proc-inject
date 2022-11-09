@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {
     int c = 0;
-    if(argc < 3){
+    if(argc != 3){
         printf("Usage:%s -p pid\n", argv[0]);
         return 0;
     }
